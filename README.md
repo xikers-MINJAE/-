@@ -1,1 +1,143 @@
-# -
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xikers 민재 피드</title>
+    <style>
+        /* 기본 배경 및 폰트 설정 */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: #ffffff; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+        }
+
+        /* 피드 전체 컨테이너 */
+        .feed-container { 
+            width: 100%; 
+            max-width: 500px; 
+            padding: 20px 15px;
+            display: flex; 
+            flex-direction: column; 
+            gap: 16px; /* 카드 사이 간격 */
+        }
+
+        /* 공통 카드 스타일 */
+        .post-card, .comment-card { 
+            background: white; 
+            border-radius: 16px; 
+            border: 2px solid #ffd9e5; 
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(255, 217, 229, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        /* 댓글 카드: 왼쪽 핑크 포인트 선 추가 */
+        .comment-card {
+            border-left: 8px solid #ffd9e5;
+            background-color: #fffafc; /* 미세한 핑크빛 배경 */
+        }
+
+        /* 헤더 (프로필/이름/날짜) */
+        .header { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 14px;
+        }
+
+        .avatar { 
+            width: 44px; 
+            height: 44px; 
+            border-radius: 50%; 
+            margin-right: 12px; 
+            object-fit: cover;
+            border: 1px solid #ffeef3;
+        }
+
+        .name-wrapper { 
+            display: flex; 
+            flex-direction: column; 
+        }
+
+        .nickname { 
+            font-weight: 700; 
+            font-size: 16px; 
+            color: #333; 
+        }
+
+        .date { 
+            font-size: 12px; 
+            color: #aaa; 
+            margin-top: 3px; 
+        }
+
+        /* 본문 내용 */
+        .content { 
+            line-height: 1.7; 
+            white-space: pre-wrap; 
+            font-size: 15px; 
+            color: #444; 
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+<div class="feed-container">
+
+    <article class="post-card">
+        <div class="header">
+            <img src="https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=1,f=auto,width=40/xikers/profile/159a13d0-d3dd-47f9-81fe-b2e378835f08/5b5a7ef1-d552-4b19-807f-f84216359e37/ori.jpg" class="avatar">
+            <div class="name-wrapper">
+                <span class="nickname">민재</span>
+                <span class="date">2026.02.09 13:56</span>
+            </div>
+        </div>
+        <div class="content">월요일에 힘 좀 나누어주려고 잠깐 놀러왔슴댜!!
+
+저도 힘 빡 주고 빠이팅해서 월요일 이겨낼테니
+로디두 빠이팅해서 하루 잘 보내길~~
+
+알러뷰 쏘 머취</div>
+    </article>
+
+    <article class="comment-card">
+        <div class="header">
+            <img src="https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=2,f=auto,width=30/xikers/profile/159a13d0-d3dd-47f9-81fe-b2e378835f08/5b5a7ef1-d552-4b19-807f-f84216359e37/ori.jpg" class="avatar">
+            <div class="name-wrapper">
+                <span class="nickname">민재</span>
+                <span class="date">2026.02.09 13:19</span>
+            </div>
+        </div>
+        <div class="content">이왕 와버린거 즐기자 이또한 지나가리
+
+월요탱!!!!</div>
+    </article>
+
+    <article class="comment-card">
+        <div class="header">
+            <img src="https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=2,f=auto,width=30/xikers/profile/159a13d0-d3dd-47f9-81fe-b2e378835f08/5b5a7ef1-d552-4b19-807f-f84216359e37/ori.jpg" class="avatar">
+            <div class="name-wrapper">
+                <span class="nickname">민재</span>
+                <span class="date">2026.02.09 13:20</span>
+            </div>
+        </div>
+        <div class="content">내가 하고싶은 말이었는데 뺏겨따</div>
+    </article>
+
+    <article class="comment-card">
+        <div class="header">
+            <img src="https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=2,f=auto,width=30/xikers/profile/159a13d0-d3dd-47f9-81fe-b2e378835f08/5b5a7ef1-d552-4b19-807f-f84216359e37/ori.jpg" class="avatar">
+            <div class="name-wrapper">
+                <span class="nickname">민재</span>
+                <span class="date">2026.02.09 13:20</span>
+            </div>
+        </div>
+        <div class="content">우땨땨ㅑ</div>
+    </article>
+
+</div>
+
+</body>
+</html>
